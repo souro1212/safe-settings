@@ -5,21 +5,21 @@
 `Safe-settings`– an app to manage policy-as-code and apply repository settings to repositories across an organization.
 
 1. In `safe-settings` all the settings are stored centrally in an `admin` repo within the organization. This is important. Unlike [Settings Probot](https://github.com/probot/settings), the settings files cannot be in individual repositories.  
-<br> `NOTE:` It is possible to overrride this behavior and specify a custom repo instead of the `admin` repo.  
+<br> :wave:`NOTE:` It is possible to overrride this behavior and specify a custom repo instead of the `admin` repo.  
 This could be done by setting an `env` variable called `SAFE_SETTINGS_ADMIN_REPO`.
 
 3. There are 3 levels at which the settings could be managed:
    1. Org-level settings are defined in `.github/settings.yml`  
-   <br> `NOTE:` It is possible to overrride this behavior and specify a different filename for the `settings` yml repo.   
+   <br> :wave:`NOTE:` It is possible to overrride this behavior and specify a different filename for the `settings` yml repo.   
 This could be done by setting an `env` variable called `SAFE_SETTINGS_SETTINGS_FILE_PATH`.
 
    3. `Suborg` level settings. A `suborg` is an arbitrary collection of repos belonging to projects, business units, or teams. The `suborg` settings reside in a yaml file for each `suborg` in the `.github/suborgs` folder.
    4. `Repo` level settings. They reside in a repo specific yaml in `.github/repos` folder
 4. It is recommended to break the settings into org-level, suborg-level, and repo-level units. This will allow different teams to be define and manage policies for their specific projects or business units.With `CODEOWNERS`, this will allow different people to be responsible for approving changes in different projects.
 
-`NOTE:` `Suborg` and `Repo` level settings directory structure cannot be customized.
+:wave:`NOTE:` `Suborg` and `Repo` level settings directory structure cannot be customized.
 
-`NOTE:` The settings file must have a `.yml`extension only. `.yaml` extension is ignored, for now.
+:wave:`NOTE:` The settings file must have a `.yml`extension only. `.yaml` extension is ignored, for now.
 
 ## How it works
 
