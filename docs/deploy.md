@@ -46,9 +46,9 @@ And one of:
 
 Other Optional values in the .env are:    
 - `LOG_LEVEL`: Control the logging level
-- `SAFE_SETTINGS_ADMIN_REPO`: default is `admin`
-- `SAFE_SETTINGS_SETTINGS_FILE_PATH`: default is `settings.yml`
--  `DEPLOYMENT_CONFIG_FILE`: default is `deployment-settings.yml`
+- `ADMIN_REPO`: default is `admin`
+- `SETTINGS_FILE_PATH`: default is `settings.yml`
+- `DEPLOYMENT_CONFIG_FILE`: default is `deployment-settings.yml`
 - `NODE_TLS_REJECT_UNAUTHORIZED`: `0` for ignoring SSL validation and errors
 - `GHE_HOST`: This is a required field for **GitHub Enterprise Server** implementations (_Example: github.mycompany.com_)
 - `WEBHOOK_PROXY_URL`:  SMEE Url for testing locally
