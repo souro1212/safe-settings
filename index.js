@@ -289,7 +289,7 @@ module.exports = (robot, _, Settings = require('./lib/settings')) => {
     const adminRepo = repository.name === env.ADMIN_REPO
     robot.log.debug(`Is Admin repo event ${adminRepo}`)
     if (!adminRepo) {
-      robot.log.debug('Not working on the Admin repo, returning...')
+      robot.log.debug(`Not working on the Admin repo; This repo is ${repository.name} and Admin repo is ${env.ADMIN_REPO} returning...`)
       return
     }
     const defaultBranch = payload.check_suite.head_branch === repository.default_branch
