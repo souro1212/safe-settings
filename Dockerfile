@@ -1,4 +1,4 @@
-FROM node:14.17.6-alpine
+FROM node:14.21.3-alpine
 ENV NODE_ENV production
 ## Set the Labels
 LABEL version="1.0" \
